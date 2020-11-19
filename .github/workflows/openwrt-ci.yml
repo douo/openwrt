@@ -12,7 +12,7 @@ name: OpenWrt-CI
 on:
   push:
     branches:
-      - 19.07_douo
+      - 'douo-19.07.4'
 
 jobs:
 
@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          ref: 19.07_douo
+          ref: 'douo-19.07.4'
 
       - name: Space cleanup
         env:
